@@ -14,8 +14,12 @@ def reduce(s, sp=nil)
     accum = sp
     i = 0
   else
-    acum = s[0]
-    i += log10
+    accum = s[0]
+    i = 1
+  end
+  while i < s.length
+    accum = yield(accum, s[i])
+    i += 1
   end
   accum
 end
