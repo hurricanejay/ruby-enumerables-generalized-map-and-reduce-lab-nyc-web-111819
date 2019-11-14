@@ -8,3 +8,15 @@ def map(s)
   end
   new
 end
+
+def reduce(s, sp=nil)
+  if sp
+    accum = sp
+    i = 0
+  else
+    acum = s[0]
+    i += log10
+  end
+  accum
+end
+    
